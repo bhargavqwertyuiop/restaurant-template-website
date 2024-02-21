@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eb9800;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f6bc00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+/* Cart item styles */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details>div {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Total price styles */
+#total-price {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pay now button styles */
+#pay-now {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#pay-now:hover {
+    background-color: #0056b3;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.remove-from-cart {
+    margin-left: auto;
+    padding: 7px 15px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}

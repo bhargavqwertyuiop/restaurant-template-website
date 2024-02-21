@@ -1,0 +1,666 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc7700;
+}
+
+/* Menu Section Styles */
+.menu {
+    padding: 100px 0;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* About Us Section Styles */
+.about {
+    padding: 100px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Reservations Section Styles */
+.reservations {
+    padding: 100px 0;
+}
+
+.reservations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    /* Add responsive styles for other sections as needed */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 250px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc7700;
+}
+
+.menu h2 {
+    color: #ff9900;
+    margin-bottom: 40px;
+}
+
+/* Menu Section Styles */
+.menu {
+    background-image: url('images/bg-image2.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    /* Reduced padding */
+}
+
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid layout */
+    grid-gap: 20px;
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.menu-item {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for menu items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transition effect for transform and box-shadow */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    /* Move the menu item upward on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Increase box shadow on hover */
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin-top: 20px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+}
+
+.menu-item button {
+    margin-top: 20px;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+    background-color: #cc7700;
+}
+
+.menu h2 {
+    margin-bottom: 30px;
+    color: white;
+    /* Adjusted margin */
+}
+
+/* About Us Section Styles */
+.about {
+    background-color: #ffc400;
+    /* Light gray background color */
+    color: #000000;
+    /* Dark text color */
+    padding: 130px 0;
+}
+
+
+.about h2 {
+    text-align: center;
+    padding-top: 1px;
+    margin-bottom: 120px;
+    color: white;
+
+
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid layout */
+    grid-gap: 20px;
+}
+
+.user {
+    background-color: #fff;
+    /* White background color for user boxes */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Box shadow for user boxes */
+    cursor: pointer;
+}
+
+.user {
+    background-color: #fff;
+    /* White background color for user boxes */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow for user boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transition effect for transform and box-shadow */
+}
+
+.user:hover {
+    transform: translateY(-5px);
+    /* Move the user element upward on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Increase box shadow on hover */
+}
+
+.user img {
+    width: 100%;
+    border-radius: 50%;
+    /* Circular user images */
+    margin-bottom: 20px;
+}
+
+.user h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.user p {
+    text-align: center;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-image: url('images/contact-us3.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 170px 0;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Box shadow for form */
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    /* Allow vertical resizing */
+}
+
+.contact-form button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #cc7700;
+}
+
+.contact {
+    padding-top: 20px;
+}
+
+/* Reservations Section Styles */
+.reservations {
+    background-image: url('reservation-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.reservations h2 {
+    margin-bottom: 40px;
+}
+
+.reservation-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Box shadow for form */
+}
+
+.reservation-form h3 {
+    margin-bottom: 20px;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+    appearance: none;
+    /* Remove default styles for date and time inputs */
+    -webkit-appearance: none;
+}
+
+.reservation-form button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: #cc7700;
+}
+
+/* Reservations Section Styles */
+.reservations {
+    background-image: url('images/reservation.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.reservations h2 {
+    margin-bottom: 40px;
+}
+
+.reservation-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Box shadow for form */
+    display: inline-block;
+}
+
+/* Reservations Section Styles */
+
+
+.reservations h2 {
+    margin-bottom: 40px;
+}
+
+.reservation-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Box shadow for form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    max-width: 500px;
+    /* Limit width for better readability */
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+/* Media Query for screens with a maximum width of 640px */
+@media only screen and (max-width: 640px) {
+
+    /* Adjustments for header */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjustments for navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjustments for hero section */
+    .hero {
+        padding: 150px 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    /* Adjustments for menu section */
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Adjustments for about section */
+    .about {
+        padding: 60px 0;
+    }
+
+    /* Adjustments for contact section */
+    .contact,
+    .reservations {
+        padding: 80px 20px;
+    }
+
+    .contact-info ul li {
+        margin-bottom: 15px;
+    }
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 7px 17px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffab02;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #cc7700;
+}
+
+/* styles.css */
+
+
+/* Styling for "View Cart" button */
+#view-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* Adjusted position to bottom right */
+    background-color: #d2f203;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Remove underline for anchor element */
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#view-cart:hover {
+    background-color: #ffb700;
+    transform: scale(1.1);
+}

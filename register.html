@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/login_register_bg.jpg');
+            /* Replace 'background.jpg' with your desired background image */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            width: 300px;
+            background-color: rgba(173, 216, 230, 0.9);
+            /* Light blue background with transparency */
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            /* Box shadow for depth */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            /* Transition for hover effect */
+        }
+
+
+        .register-container:hover {
+            transform: translateY(-5px);
+            /* Lift container slightly on hover */
+        }
+
+        .register-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            /* Label text color */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            /* Green color for register button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            /* Smooth color transition */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+            /* Darker green color on hover */
+        }
+
+        p {
+            margin-top: 20px;
+            color: #666;
+            /* Text color for additional information */
+            font-size: 14px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            /* Smooth color transition */
+        }
+
+        a:hover {
+            color: #0056b3;
+            /* Change color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <form class="register-form" action="register.php" method="POST">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
